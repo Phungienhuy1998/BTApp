@@ -2,3 +2,21 @@
   max-height: 35vh;
   overflow: hidden;
 }
+.text-mid ion-col{
+  text-align: center;
+ color: darkgray;
+ font-weight: bold;
+}
+.background-tt ion-col{
+  background: deepskyblue ;
+  border:solid 1px white;
+  text-align: center;
+  border-radius: 8%;
+  color:darkolivegreen;
+  font-weight: bold;
+  margin-top: -10px;
+}
+.icon_color{
+  color: aliceblue;
+  width: 50px;
+}

@@ -6,6 +6,8 @@
   text-align: center;
  color: darkgray;
  font-weight: bold;
+ border-top: solid 1px cornflowerblue;
+ border-bottom: solid 1px cornflowerblue;
 }
 .background-tt ion-col{
   background: deepskyblue ;
@@ -14,9 +16,13 @@
   border-radius: 8%;
   color:darkolivegreen;
   font-weight: bold;
-  margin-top: -10px;
+  
 }
 .icon_color{
   color: aliceblue;
   width: 50px;
 }
+.color-text {
+  font-weight: bold;
+  
+ }

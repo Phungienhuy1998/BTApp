@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import*as firebase from 'firebase';
 import {FIREBASE_CONFIG ,getdata} from '../config_firebase';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -12,7 +14,7 @@ export class LoginPage implements OnInit {
   edt_pass="";
   account=[];
   listStudent=[];
-  constructor() { 
+  constructor(private router: Router) { 
     this.btn_getDocument();
   }
 
@@ -27,7 +29,7 @@ export class LoginPage implements OnInit {
       if(this.account.length>0){
         if(this.account[0].pass===this.edt_pass){
           console.log("Conguration")
-          console.log
+          this.router.navigate(['']);
         }else{
           console.log("wrong password")
         }

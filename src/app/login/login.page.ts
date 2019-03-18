@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import*as firebase from 'firebase';
 import {FIREBASE_CONFIG ,getdata} from '../config_firebase';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -14,6 +15,8 @@ export class LoginPage implements OnInit {
   edt_pass="";
   account=[];
   listStudent=[];
+  selectedProduct : Subject<any> = new Subject;
+
   constructor(private router: Router) { 
     this.btn_getDocument();
   }
@@ -47,5 +50,9 @@ export class LoginPage implements OnInit {
       this.listStudent=getdata(resp);
       console.log(this.listStudent)
          });
-}
+  }
+
+getpopup(det) {
+  this.selectedProduct.next(det);
+  }
 }

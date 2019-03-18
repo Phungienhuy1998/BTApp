@@ -1,4 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
+import { LoginPage  } from '../login/login.page';
+import { fromEventPattern } from 'rxjs';
 
 @Component({
   selector: 'app-thongtin',
@@ -10,6 +13,7 @@ export class ThongtinPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

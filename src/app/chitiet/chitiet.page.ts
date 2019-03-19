@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ServiceService} from '../services/service.service'
 @Component({
   selector: 'app-chitiet',
   templateUrl: './chitiet.page.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChitietPage implements OnInit {
 
-  constructor() { }
+  constructor(private _Service:ServiceService) { }
 
   ngOnInit() {
+   
   }
-
+goBack(){
+  this._Service.goBack();
+}
 }

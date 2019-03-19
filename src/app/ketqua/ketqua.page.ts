@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ServiceService} from '../services/service.service'
 @Component({
   selector: 'app-ketqua',
   templateUrl: './ketqua.page.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KetquaPage implements OnInit {
 
-  constructor() { }
+  constructor(private _Service:ServiceService) { }
 
   ngOnInit() {
   }
-
+goBack(){
+  this._Service.goBack();
+}
 }

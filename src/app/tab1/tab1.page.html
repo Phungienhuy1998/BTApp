@@ -19,31 +19,31 @@
           </ion-col>
   
           <ion-col size="4" style="line-height: 5px"  >
-           
-            <ion-text *ngIf="fulldetails" >
-              <p>Tên:<span class="color-text">dasdasd {{fulldetails.name}}</span></p>
+           <div *ngIf="liststudent">
+            <ion-text >
+              <p>Tên:<span class="color-text">{{liststudent.name}}</span></p>
             </ion-text>
   
             <ion-text >
-              <p>Tình trạng: <span class="color-text">dasda</span></p>
+              <p>Tình trạng: <span class="color-text">.........</span></p>
             </ion-text>
   
             <ion-text >
-              <p>MSSV: <span class="color-text">dasda</span></p>
+              <p>MSSV: <span class="color-text">{{liststudent.MSSV}}</span></p>
             </ion-text>
   
             <ion-text >
-              <p>Giới tính:<span class="color-text">dasda</span></p>
+              <p>Giới tính:<span class="color-text">{{liststudent.Sex}}</span></p>
             </ion-text>
   
             <ion-text>
-              <p>Ngày sinh:<span class="color-text">dasda</span></p>
+              <p>Ngày sinh:<span class="color-text">{{liststudent.birthday}}</span></p>
             </ion-text>
   
             <ion-text >
-              <p>Mã lớp:<span class="color-text">dasda</span></p>
+              <p>Mã lớp:<span class="color-text">{{liststudent.class}}</span></p>
             </ion-text>
-
+          </div>
         
   
   

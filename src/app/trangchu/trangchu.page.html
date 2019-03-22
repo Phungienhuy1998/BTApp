@@ -1,17 +1,17 @@
 <ion-toolbar>
-  <ion-title style="text-align: center">
+  
     <ion-grid  >
 
       <ion-row class="TT-name">
-        <ion-col size="4" style="margin-top: 65px,">
+        <ion-col size="4" >
 
-          <ion-avatar>
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          <ion-avatar class="img-avatar">
+            <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/105-User-512.png" style="width: 150px" style="height: 80px">
           </ion-avatar>
 
         </ion-col>
 
-        <ion-col size="4" style="line-height: 5px"  >
+        <ion-col size="8" style="line-height: 5px"  >
          <div *ngIf="liststudent">
           <ion-text >
             <p>Tên:<span class="color-text">{{liststudent.name}}</span></p>
@@ -49,7 +49,7 @@
 
 
     </ion-grid>
-  </ion-title>
+  
 </ion-toolbar>
 
 

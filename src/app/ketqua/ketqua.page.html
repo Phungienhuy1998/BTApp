@@ -11,16 +11,16 @@
 <ion-content>
 
 <table class="table table-bordered">
-
+ <div *ngIf="listdiem">
 
 
   <thead class="backgroun-table">
     <tr style="text-align: center">
       <th scope="col">STT</th>
-      <th scope="col">Mã Môn</th>
-      <th scope="col">Môn</th>
-      <th scope="col">DVHT</th>
+      <th scope="col">Môn Học</th>
+      <th scope="col">Điểm Thi</th>
       <th scope="col">Điểm TB</th>
+      <th scope="col">Điểm Chữ</th>
     </tr>
   </thead>
 
@@ -31,26 +31,33 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>000212</td>
-      <td>Cơ Sở Dữ Liệu</td>
-      <td>2</td>
-      <td>7.2</td>
+      <td>Cấu trúc máy tính</td>
+      <td>{{listdiem.DiemThi.ctmt.thi}}</td>
+      <td>{{listdiem.DiemThi.ctmt.trungbinh}}</td>
+      <td>{{listdiem.DiemThi.ctmt.chu}}</td>
     </tr>
 
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@fat</td>
+      <td>Toán Rời Rạc</td>
+      <td>{{listdiem.DiemThi.trr.thi}}</td>
+      <td>{{listdiem.DiemThi.trr.trungbinh}}</td>
+      <td>{{listdiem.DiemThi.trr.chu}}</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@fat</td>
+      <td>Cơ Sở Lập Trình</td>
+      <td>{{listdiem.DiemThi.cslt.thi}}</td>
+      <td>{{listdiem.DiemThi.cslt.trungbinh}}</td>
+      <td>{{listdiem.DiemThi.cslt.chu}}</td>
     </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>CCNA1</td>
+        <td>{{listdiem.DiemThi.ccna.thi}}</td>
+        <td>{{listdiem.DiemThi.ccna.trungbinh}}</td>
+        <td>{{listdiem.DiemThi.ccna.chu}}</td>
+      </tr>
   </tbody>
 
   <tr>
@@ -59,7 +66,7 @@
 
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">5</th>
         <td>000212</td>
         <td>Cơ Sở Dữ Liệu</td>
         <td>2</td>
@@ -197,6 +204,7 @@
         <td>@fat</td>
       </tr>
     </tbody>
+  </div>
 </table>
 
 

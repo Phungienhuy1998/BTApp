@@ -30,6 +30,8 @@ export class TrangchuPage implements OnInit {
       this.liststudent = val;
     });
   }
+
+  
 }
 
 

@@ -1,8 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
-
-
+import { Subject } from 'rxjs';
+import { ServiceService } from '../services/service.service'
 @Component({
   selector: 'app-thongtin',
   templateUrl: './thongtin.page.html',
@@ -12,7 +12,7 @@ export class ThongtinPage implements OnInit {
 
   liststudent : [];
 
-  constructor(private storage: Storage) { 
+  constructor(private storage: Storage,private _Service: ServiceService) { 
     this.calldata();
   }
 
@@ -26,6 +26,9 @@ export class ThongtinPage implements OnInit {
       this.liststudent = val;
       console.log(this.liststudent);
     });
+  }
+  goBack() {
+    this._Service.goBack();
   }
   }
 

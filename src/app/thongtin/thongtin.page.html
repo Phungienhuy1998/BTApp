@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-back-button color="primary" defaultHref=""  ></ion-back-button>
+        <ion-back-button color="primary" defaultHref="" (click)="goBack()"   ></ion-back-button>
         <ion-title> Thông Tin </ion-title>
       </ion-buttons>
 
@@ -9,43 +9,46 @@
   </ion-header>
   
 
-<ion-toolbar>
-  <ion-title style="text-align: center">
-    <ion-grid  >
+  <ion-toolbar>
+  
+    <ion-grid  style="margin-top: -10px">
 
       <ion-row class="TT-name">
-        <ion-col size="3" style="margin-top: 65px,">
+        <ion-col size="4" >
 
-          <ion-avatar>
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          <ion-avatar class="img-avatar">
+            <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/105-User-512.png" style="width: 150px" style="height: 80px">
           </ion-avatar>
 
         </ion-col>
 
-        <ion-col size="4" style="line-height: 5px" >
-          <ion-text >
-            <p>Tên:<span class="color-text">dasda</span></p>
+        <ion-col size="8" style="line-height: 5px"  >
+         <div *ngIf="liststudent">
+          <ion-text   >
+            <p>Tên:<span class="color-text">{{liststudent.name}}</span></p>
           </ion-text>
 
           <ion-text >
-            <p>Tình trạng: <span class="color-text">dasda</span></p>
+            <p>Tình trạng: <span class="color-text">.........</span></p>
           </ion-text>
 
           <ion-text >
-            <p>MSSV: <span class="color-text">dasda</span></p>
+            <p>MSSV: <span class="color-text">{{liststudent.MSSV}}</span></p>
           </ion-text>
 
           <ion-text >
-            <p>Giới tính:<span class="color-text">dasda</span></p>
+            <p>Giới tính:<span class="color-text">{{liststudent.Sex}}</span></p>
           </ion-text>
 
           <ion-text>
-            <p>Ngày sinh:<span class="color-text">dasda</span></p>
+            <p>Ngày sinh:<span class="color-text">{{liststudent.birthday}}</span></p>
           </ion-text>
 
           <ion-text >
-            <p>Mã lớp:<span class="color-text">dasda</span></p>
+            <p>Mã lớp:<span class="color-text">{{liststudent.class}}</span></p>
           </ion-text>
+        </div>
+      
 
 
 
@@ -57,8 +60,9 @@
 
 
     </ion-grid>
-  </ion-title>
+  
 </ion-toolbar>
+
 
 <ion-content>
   <ion-grid class="text-mid">
@@ -72,17 +76,17 @@
   <ion-grid>
     <div *ngIf="liststudent"> 
     <ion-row>
-      <ion-col>
-        Cơ sở:<span class="color-text">{{liststudent.name}}</span>
+      <ion-col size="4">
+        Cơ sở:<span class="color-text">1</span>
       </ion-col>
 
-      <ion-col>
-        Khóa:<span class="color-text">dasda</span>
+      <ion-col size="8">
+        Khóa:<span class="color-text">2018-2019</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Loại hình đào tạo: <span class="color-text">dasda</span>
+        Loại hình đào tạo: <span class="color-text">Cao đẳng</span>
       </ion-col>
     </ion-row>
     <ion-row>

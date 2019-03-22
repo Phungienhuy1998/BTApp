@@ -28,7 +28,7 @@ btn_login () {
       if(this.account.length>0){
         if(this.account[0].pass===this.edt_pass){
           console.log("Conguration")
-          this.router.navigate(['']);
+          this.router.navigate(["/trangchu"]);
           this.storage.set('MY_ACCOUNT', this.account[0]);
         }else{
           console.log("wrong password")

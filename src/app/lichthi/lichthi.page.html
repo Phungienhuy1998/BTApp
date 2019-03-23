@@ -2,7 +2,7 @@
     <ion-toolbar>
         <ion-buttons slot="start">
         <ion-back-button color="primary" defaultHref="" (click)="goBack()"></ion-back-button>
-        <ion-title> Lịch Học </ion-title>
+        <ion-title> Lịch Thi </ion-title>
       </ion-buttons>
     </ion-toolbar>
   </ion-header> 
@@ -16,7 +16,7 @@
            <tr style="text-align: center">
              <th scope="col" width="10%">STT</th>
              <th scope="col"width="40%">Môn Học</th>
-             <th scope="col"width="40%">Thời Gian</th>
+             <th scope="col"width="35%">Thời Gian</th>
              <th scope="col"width="10%">Số Tiết</th>
            </tr>
          </thead>
@@ -29,27 +29,27 @@
            <tr>
              <th scope="row">1</th>
              <td>Cấu trúc máy tính</td>
-             <td>{{listdiem.LichHoc.ctmt.time}}</td>
-             <td>{{listdiem.LichHoc.ctmt.tiet}}</td>
+             <td>{{listdiem.LichThi.ctmt.time}}</td>
+             <td>{{listdiem.LichThi.ctmt.phong}}</td>
            </tr>
        
            <tr>
              <th scope="row">2</th>
              <td>Toán Rời Rạc</td>
-             <td>{{listdiem.LichHoc.trr.time}}</td>
-             <td>{{listdiem.LichHoc.trr.tiet}}</td>
+             <td>{{listdiem.LichThi.trr.time}}</td>
+             <td>{{listdiem.LichThi.trr.phong}}</td>
            </tr>
            <tr>
              <th scope="row">3</th>
              <td>Cơ Sở Lập Trình</td>
-             <td>{{listdiem.LichHoc.cslt.time}}</td>
-             <td>{{listdiem.LichHoc.cslt.tiet}}</td>
+             <td>{{listdiem.LichThi.cslt.time}}</td>
+             <td>{{listdiem.LichThi.cslt.phong}}</td>
            </tr>
            <tr>
                <th scope="row">4</th>
                <td>CCNA1</td>
-               <td>{{listdiem.LichHoc.ccna.time}}</td>
-               <td>{{listdiem.LichHoc.ccna.tiet}}</td>
+               <td>{{listdiem.LichThi.ccna.time}}</td>
+               <td>{{listdiem.LichThi.ccna.phong}}</td>
              </tr>
          </tbody>
        
@@ -61,33 +61,33 @@
              <tr>
                <th scope="row">5</th>
                <td>Anh Văn A2</td>
-               <td>{{listdiem.LichHoc.AVA2.time}}</td>
-               <td>{{listdiem.LichHoc.AVA2.tiet}}</td>
+               <td>{{listdiem.LichThi.AVA2.time}}</td>
+               <td>{{listdiem.LichThi.AVA2.phong}}</td>
              </tr>
        
              <tr>
                <th scope="row">6</th>
                <td>Dữ Liệu Lớn</td>
-               <td>{{listdiem.LichHoc.ddl.time}}</td>
-               <td>{{listdiem.LichHoc.ddl.tiet}}</td>
+               <td>{{listdiem.LichThi.ddl.time}}</td>
+               <td>{{listdiem.LichThi.ddl.phong}}</td>
              </tr>
              <tr>
                <th scope="row">7</th>
                <td>Lập Trình Giao Diện Web</td>
-               <td>{{listdiem.LichHoc.ltddw.time}}</td>
-               <td>{{listdiem.LichHoc.AVA2.tiet}}</td>
+               <td>{{listdiem.LichThi.ltddw.time}}</td>
+               <td>{{listdiem.LichThi.ltddw.phong}}</td>
              </tr>
              <tr>
                 <th scope="row">8</th>
                 <td>Lập Trình Web Phía Máy Chủ</td>
-                <td>{{listdiem.LichHoc.ltwpmc.time}}</td>
-                <td>{{listdiem.LichHoc.ltwpmc.tiet}}</td>
+                <td>{{listdiem.LichThi.ltwpmc.time}}</td>
+                <td>{{listdiem.LichThi.ltwpmc.phong}}</td>
               </tr>
               <tr>
                   <th scope="row">9</th>
                   <td>Quản Lí Dự Án Phần Mềm</td>
-                  <td>{{listdiem.LichHoc.qldapm.time}}</td>
-                  <td>{{listdiem.LichHoc.qldapm.tiet}}</td>
+                  <td>{{listdiem.LichThi.qldapm.time}}</td>
+                  <td>{{listdiem.LichThi.qldapm.phong}}</td>
                 </tr>
            </tbody>
        

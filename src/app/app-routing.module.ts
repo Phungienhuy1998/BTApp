@@ -13,7 +13,9 @@ const routes: Routes = [
   { path: 'ketqua', loadChildren: './ketqua/ketqua.module#KetquaPageModule' },
   { path: 'lichhoc', loadChildren: './lichhoc/lichhoc.module#LichhocPageModule' },
   { path: 'chitiet', loadChildren: './chitiet/chitiet.module#ChitietPageModule' },
-  { path: 'trangchu', loadChildren: './trangchu/trangchu.module#TrangchuPageModule' }
+  { path: 'trangchu', loadChildren: './trangchu/trangchu.module#TrangchuPageModule' },
+  { path: 'doipass', loadChildren: './doipass/doipass.module#DoipassPageModule' },
+  { path: 'lichthi', loadChildren: './lichthi/lichthi.module#LichthiPageModule' }
 
 
 

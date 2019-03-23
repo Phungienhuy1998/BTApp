@@ -1,13 +1,15 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { Subject } from 'rxjs';
-import { ServiceService } from '../services/service.service'
+import { ServiceService } from '../services/service.service';
+
+
 @Component({
   selector: 'app-thongtin',
   templateUrl: './thongtin.page.html',
   styleUrls: ['./thongtin.page.scss'],
 })
+
 export class ThongtinPage implements OnInit {
 
   liststudent : [];

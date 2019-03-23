@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button color="primary" defaultHref="home" (click)="goBack()"></ion-back-button>
+      <ion-back-button color="primary" defaultHref="" (click)="goBack()"></ion-back-button>
       <ion-title> KẾT QUẢ HỌC TẬP </ion-title>
     </ion-buttons>
    
@@ -65,28 +65,42 @@
     </tr>
 
     <tbody>
-      <tr>
-        <th scope="row">5</th>
-        <td>000212</td>
-        <td>Cơ Sở Dữ Liệu</td>
-        <td>2</td>
-        <td>7.2</td>
-      </tr>
-
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-        <td>@fat</td>
-      </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Anh Văn A2</td>
+            <td>{{listdiem.DiemThi.AVA2.thi}}</td>
+            <td>{{listdiem.DiemThi.AVA2.trungbinh}}</td>
+            <td>{{listdiem.DiemThi.AVA2.chu}}</td>
+          </tr>
+    
+          <tr>
+            <th scope="row">6</th>
+            <td>Dữ Liệu Lớn</td>
+            <td>{{listdiem.DiemThi.ddl.thi}}</td>
+            <td>{{listdiem.DiemThi.ddl.trungbinh}}</td>
+            <td>{{listdiem.DiemThi.ddl.chu}}</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Lập Trình Giao Diện Web</td>
+            <td>{{listdiem.DiemThi.ltddw.thi}}</td>
+            <td>{{listdiem.DiemThi.ltddw.trungbinh}}</td>
+            <td>{{listdiem.DiemThi.ltddw.chu}}</td>
+          </tr>
+          <tr>
+             <th scope="row">8</th>
+             <td>Lập Trình Web Phía Máy Chủ</td>
+             <td>{{listdiem.DiemThi.ltwpmc.thi}}</td>
+             <td>{{listdiem.DiemThi.ltwpmc.trungbinh}}</td>
+             <td>{{listdiem.DiemThi.ltwpmc.chu}}</td>
+           </tr>
+           <tr>
+               <th scope="row">9</th>
+               <td>Quản Lí Dự Án Phần Mềm</td>
+               <td>{{listdiem.DiemThi.qldapm.thi}}</td>
+               <td>{{listdiem.DiemThi.qldapm.trungbinh}}</td>
+               <td>{{listdiem.DiemThi.qldapm.chu}}</td>
+             </tr>
     </tbody>
 
    

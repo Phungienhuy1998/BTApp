@@ -25,11 +25,11 @@
         <ion-col size="8" style="line-height: 5px"  >
          <div *ngIf="liststudent">
           <ion-text   >
-            <p>Tên:<span class="color-text">{{liststudent.name}}</span></p>
+            <p>Tên: <span class="color-text">{{liststudent.name}}</span></p>
           </ion-text>
 
           <ion-text >
-            <p>Tình trạng: <span class="color-text">.........</span></p>
+            <p>Tình trạng: <span class="color-text"> {{liststudent.tinhtrang}} </span></p>
           </ion-text>
 
           <ion-text >
@@ -37,15 +37,15 @@
           </ion-text>
 
           <ion-text >
-            <p>Giới tính:<span class="color-text">{{liststudent.Sex}}</span></p>
+            <p>Giới tính: <span class="color-text">{{liststudent.Sex}}</span></p>
           </ion-text>
 
           <ion-text>
-            <p>Ngày sinh:<span class="color-text">{{liststudent.birthday}}</span></p>
+            <p>Ngày sinh: <span class="color-text">{{liststudent.birthday}}</span></p>
           </ion-text>
 
           <ion-text >
-            <p>Mã lớp:<span class="color-text">{{liststudent.class}}</span></p>
+            <p>Tên lớp: <span class="color-text">{{liststudent.class}}</span></p>
           </ion-text>
         </div>
       
@@ -77,31 +77,31 @@
     <div *ngIf="liststudent"> 
     <ion-row>
       <ion-col size="4">
-        Cơ sở:<span class="color-text">1</span>
+        Cơ sở: <span class="color-text"> 1 </span>
       </ion-col>
 
       <ion-col size="8">
-        Khóa:<span class="color-text">2018-2019</span>
+        Khóa: <span class="color-text"> 2018-2019 </span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Loại hình đào tạo: <span class="color-text">Cao đẳng</span>
+        Loại hình đào tạo: <span class="color-text"> Cao đẳng </span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Ngành:<span class="color-text">dasda</span>
+        Ngành: <span class="color-text">{{liststudent.nganh}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Khoa:<span class="color-text">dasda</span>
+        Khoa:<span class="color-text">{{liststudent.khoa}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Tên Lớp:<span class="color-text">dasda</span>
+        Tên Lớp:<span class="color-text">{{liststudent.class}}</span>
       </ion-col>
     </ion-row>
 </div>

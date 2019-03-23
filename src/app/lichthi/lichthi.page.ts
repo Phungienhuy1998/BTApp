@@ -3,11 +3,11 @@ import { ServiceService } from '../services/service.service';
 import { Storage } from '@ionic/storage';
 
 @Component({
-  selector: 'app-lichhoc',
-  templateUrl: './lichhoc.page.html',
-  styleUrls: ['./lichhoc.page.scss'],
+  selector: 'app-lichthi',
+  templateUrl: './lichthi.page.html',
+  styleUrls: ['./lichthi.page.scss'],
 })
-export class LichhocPage implements OnInit {
+export class LichthiPage implements OnInit {
 
   listdiem : [];
 
@@ -31,5 +31,4 @@ export class LichhocPage implements OnInit {
   goBack() {
     this._Service.goBack();
     }
-
 }

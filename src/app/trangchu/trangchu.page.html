@@ -14,11 +14,11 @@
         <ion-col size="8" style="line-height: 5px"  >
          <div *ngIf="liststudent">
           <ion-text   >
-            <p>Tên:<span class="color-text">{{liststudent.name}}</span></p>
+            <p>Tên: <span class="color-text">{{liststudent.name}}</span></p>
           </ion-text>
 
           <ion-text >
-            <p>Tình trạng: <span class="color-text">.........</span></p>
+            <p>Tình trạng: <span class="color-text">{{liststudent.tinhtrang}}</span></p>
           </ion-text>
 
           <ion-text >
@@ -78,12 +78,12 @@
     <ion-col>
       <ion-icon name="school" class="icon_color"></ion-icon>
       <br>
-      <a href="/ketqua"> Kết quả học</a>
+      <a href="/ketqua"> Kết Quả Học Tập </a>
     </ion-col>
     <ion-col>
       <ion-icon name="paper" class="icon_color"></ion-icon>
       <br>
-      <a href="/lichhoc">Lịch học lịch thi</a>
+      <a href="/lichhoc">Lịch Học</a>
     </ion-col>
     
   </ion-row>
@@ -95,9 +95,9 @@
 <ion-grid class="background-tt">
   <ion-row>
     <ion-col>
-        <ion-icon name="log-out" class="icon_color"></ion-icon>
+        <ion-icon name="paper" class="icon_color"></ion-icon>
         <br>
-        <a href="/login">log out</a>
+        <a href="/lichthi">Lịch Thi</a>
     </ion-col>
 
     <ion-col>
@@ -115,12 +115,15 @@
 <ion-grid class="background-tt">
   <ion-row>
     <ion-col>
-      <ion-icon name="doi-pass" class="icon_color"></ion-icon>
+      <ion-icon name="key" class="icon_color"></ion-icon>
         <br>
-        <a href="">Đổi Mật Khẩu</a>
+        <a href="/doipass">Đổi Mật Khẩu</a>
     </ion-col>
 
     <ion-col>
+        <ion-icon name="log-out" class="icon_color"></ion-icon>
+        <br>
+        <a href="/doipass">Đăng Xuất</a>
     </ion-col>
 
     <ion-col>

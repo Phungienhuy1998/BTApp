@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button color="primary" defaultHref="home" (click)="goBack()"></ion-back-button>
+      <ion-back-button color="primary" defaultHref="" (click)="goBack()"></ion-back-button>
       <ion-title>Chi Tiết</ion-title>
     </ion-buttons>
 
@@ -38,15 +38,15 @@
           </ion-text>
 
           <ion-text>
-            <p>Giới tính:<span class="color-text">{{liststudent.Sex}}</span></p>
+            <p>Giới tính: <span class="color-text">{{liststudent.Sex}}</span></p>
           </ion-text>
 
           <ion-text>
-            <p>Ngày sinh:<span class="color-text">{{liststudent.birthday}}</span></p>
+            <p>Ngày sinh: <span class="color-text">{{liststudent.birthday}}</span></p>
           </ion-text>
 
           <ion-text>
-            <p>Mã lớp:<span class="color-text">{{liststudent.class}}</span></p>
+            <p>Mã lớp: <span class="color-text">{{liststudent.class}}</span></p>
           </ion-text>
         </div>
 
@@ -72,68 +72,69 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
+  <div *ngIf="liststudent">
   <ion-grid>
+      
     <ion-row>
       <ion-col>
-        Sinh viên năm : <span class="color-text">dasda</span>
+        Sinh viên năm : <span class="color-text"> 2</span>
       </ion-col>
 
       <ion-col>
-        Niên Khóa: <span class="color-text">dasda</span>
+        Niên Khóa: <span class="color-text">2018-2019</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Thời Gian đào tạo: <span class="color-text">dasda</span>
+        Thời Gian đào tạo: <span class="color-text">{{liststudent.daotao}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        GVCN:<span class="color-text">dasda</span>
+        GVCN: <span class="color-text">{{liststudent.GVCN}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        Liên Hệ:<span class="color-text">dasda</span>
+        Liên Hệ: <span class="color-text">{{liststudent.lienhe}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        TBC Tích Lũy hệ 4:<span class="color-text">dasda</span>
+        TBC Tích Lũy hệ 4: <span class="color-text">{{liststudent.TBC4}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        TBC Tích Lũy hệ 10:<span class="color-text">dasda</span>
+        TBC Tích Lũy hệ 10:<span class="color-text">{{liststudent.TBC10}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        DVHT nợ (Điểm F - tỉ lệ %): <span class="color-text">dasda</span>
+        DVHT nợ (Điểm F - tỉ lệ %): <span class="color-text">{{liststudent.DVHT.notile}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        DVHT Đăng Kí: <span class="color-text">dasda</span>
+        DVHT Đăng Kí: <span class="color-text">{{liststudent.DVHT.dk}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        DVHT Tích Lũy: <span class="color-text">dasda</span>
+        DVHT Tích Lũy: <span class="color-text">{{liststudent.DVHT.tichluy}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        DVHT phải Tích Lũy: <span class="color-text">dasda</span>
+        DVHT phải Tích Lũy: <span class="color-text">{{liststudent.DVHT.phaitichluy}}</span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        DVHT Nợ: <span class="color-text">dasda</span>
+        DVHT Nợ: <span class="color-text">{{liststudent.DVHT.no}}</span>
       </ion-col>
     </ion-row>
 
   </ion-grid>
-
+</div>
 </ion-content>

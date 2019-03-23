@@ -1,12 +1,29 @@
 <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-back-button color="primary" defaultHref="home"></ion-back-button>
-        <ion-title> Lịch Học </ion-title>
+        <ion-back-button color="primary"></ion-back-button>
+        <ion-title> Đổi Mật Khẩu </ion-title>
       </ion-buttons>
     </ion-toolbar>
   </ion-header> 
 
 <ion-content padding>
-
+  <div class="center_login">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4" style="margin-left: 20px">Mật Khẩu Cũ</label>
+        <input type="pasword" class="form-control" id="inputEmail4" [(ngModel)]="oldpass">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4" style="margin-left: 20px">Mật khẩu Mới</label>
+        <input type="password" class="form-control" id="inputPassword4" width="50px" [(ngModel)]="newpass">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4" style="margin-left: 20px">Nhập Lại Mật khẩu</label>
+        <input type="password" class="form-control" id="inputPassword5" width="50px" [(ngModel)]="againnewpass">
+      </div>
+    </div>
+    <button (click)="changepass()" type="button" class="btn btn-primary btn-sm" style=" width: 200px">Dổi Mật Khẩu</button>
+    
+  </div>
 </ion-content>

@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 
 import { ServiceService} from '../app/services/service.service';
 import { IonicStorageModule } from '@ionic/storage';
-import { LoginPage  } from '../app/login/login.page';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
